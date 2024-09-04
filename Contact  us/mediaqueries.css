@@ -1,0 +1,375 @@
+/* Navigation bar */
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile, 
+    .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section,
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-container {
+        margin-top: 0;
+    }
+    .Ham-logo {
+        height: 7%;
+        width: 100px; 
+    }
+}
+
+/* Container */
+  
+/* Dekstop */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 300px);
+    }
+
+    .box-a {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+
+    .box-b {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2; 
+    }
+
+    .box-d {
+        grid-column: 1 / span 3;
+        grid-row: 6 / span 2;
+        margin-top: -10%;
+    }
+
+    /* location Box */
+
+    .box-a {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        padding: 5%;
+    }
+
+    iframe {
+        display: flex;
+        width: 100%;
+    }
+
+    /* Information Box */
+
+    .box-b {
+        padding: 20px;
+    }
+
+    .contact-us-para {
+        margin-top: -70px;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .tele-numbers {
+        font-size: 1rem;
+    }
+
+    .address {
+        font-size: 1.25rem;
+    }
+
+    .email {
+        font-size: 1.25rem;
+    }
+
+    /* Contact box */
+
+    .heading-c {
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: -400px;
+        text-align: center;
+    }
+
+    .contact {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+}
+
+/* Tablets */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 300px);
+    }
+
+    .box-a {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+
+    .box-b {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2; 
+    }
+
+    .box-d {
+        grid-column: 1 / span 3;
+        grid-row: 6 / span 2;
+        margin-top: -10%;
+    }
+
+    /* location Box */
+
+    .box-a {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        padding: 5%;
+    }
+
+    iframe {
+        display: flex;
+        width: 100%;
+    }
+
+    /* Information Box */
+
+    .box-b {
+        padding: 20px;
+    }
+
+    .contact-us-para {
+        margin-top: -70px;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .tele-numbers {
+        font-size: 1rem;
+    }
+
+    .address {
+        font-size: 1.25rem;
+    }
+
+    .email {
+        font-size: 1.25rem;
+    }
+
+    /* Contact box */
+
+    .heading-c {
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: -400px;
+        text-align: center;
+    }
+
+    .contact {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+}
+
+/* Mobile Devices */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 300px);
+    }
+
+    .box-a {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+
+    .box-b {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2; 
+    }
+
+    .box-d {
+        grid-column: 1 / span 3;
+        grid-row: 6 / span 2;
+        margin-top: -10%;
+    }
+
+    /* location Box */
+
+    .box-a {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        padding: 5%;
+    }
+
+    iframe {
+        display: flex;
+        width: 100%;
+    }
+
+    /* Information Box */
+
+    .box-b {
+        padding: 20px;
+    }
+
+    .contact-us-para {
+        justify-content: center;
+        text-align: center;
+        margin-top: -70px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .tele-numbers {
+        font-size: 1rem;
+    }
+
+    .address {
+        font-size: 1.25rem;
+    }
+
+    .email {
+        font-size: 1.25rem;
+    }
+
+    /* Contact box */
+
+    .heading-c {
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: -400px;
+        text-align: center;
+    }
+
+    .contact {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* iPads Air  and iPad Pro */
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 300px);
+    }
+
+    .box-a {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+
+    .box-b {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2; 
+    }
+
+    .box-d {
+        grid-column: 1 / span 3;
+        grid-row: 6 / span 2;
+        margin-top: -10%;
+    }
+
+    /* location Box */
+
+    .box-a {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        padding: 5%;
+    }
+
+    iframe {
+        display: flex;
+        width: 100%;
+    }
+
+    /* Information Box */
+
+    .box-b {
+        padding: 20px;
+    }
+
+    .contact-us-para {
+        text-align: center;
+        margin-top: -70px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .tele-numbers {
+        font-size: 1.5rem;
+    }
+
+    .address {
+        font-size: 1.5rem;
+    }
+
+    .email {
+        font-size: 1.5rem;
+    }
+
+    /* Contact box */
+
+    .heading-c {
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: -350px;
+    }
+
+    .contact {
+        padding: 80px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: -70px;
+    }
+}

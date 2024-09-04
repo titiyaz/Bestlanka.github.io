@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="background"></div>
+    <div class="content">
+        <nav id="desktop-nav">
+            <div class="logo-image">
+                <img src="../navbar/Images/new_white_gb.png" alt="Best Lanka Engineering">
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="../Home/homepage.html" id="home-link">Home</a></li>
+                    <li><a href="../project/project.html" id="projects-link">Projects</a></li>
+                    <li><a href="../aboutus/aboutus.html" id="about-link">About Us</a></li>
+                    <li><a href="../Contact  us/Contact.html" id="contact-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><img src="../navbar/Images/new_white_gb.png" class="Ham-logo"></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="../Home/homepage.html" id="home-link-ham" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="../project/project.html" id="projects-link-ham" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../aboutus/aboutus.html" id="about-link-ham" onclick="toggleMenu()">About Us</a></li>
+                    <li><a href="../Contact  us/Contact.html" id="contact-link-ham" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container">
+
+        <div class="box-a">
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.1288363750837!2d79.9461136749972!3d6.994103793007015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTknMzguOCJOIDc5wrA1Nic1NS4zIkU!5e0!3m2!1sen!2slk!4v1724868212008!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="box-b">
+
+            <div class="contact-us-para">
+                <h1 class="heading">Contact Us</h1>
+
+                    <div class="address">259/6, Pushpakumara Road, <br>Pahala Biyanwila, Kadawatha </div>
+
+                    <div class="tele-numbers">
+                        <p><b>Tel:</b> +94 77 2647 628 | +94 77 8184 668</p>
+                        <p><b>Tel:</b> +94 77 320 7577 | +94 11 2929 172</p>
+                    </div>
+
+                    <div class="email"><b>Email:</b> bestlankaengineering@gmail.com</div>
+                    
+                    <div class="social-media">
+                        <div class="facebook"><a href="#"><img src="Images/Facebook_Logo_Primary.png" alt="Facebook"></a></div>
+                        <div class="linkedin"><a href="#"><img  src="Images/1.2 LI-In-Bugpng.png" alt="Linkedin"></a></div>
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="box-c"></div>    
+
+        <div class="box-d">
+
+            <div class="heading-c"><h1><b>Contact Form</b></h1></div>
+
+            <div class="contact">
+                <div class="container-a">
+                    <div class="row">
+                        <div class="contact-right">
+                            <form class="contact-form" name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="number" name="Number" placeholder="Your Mobile Number" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn" >Submit</button> 
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-e"></div>
+        <div class="box-f"></div>
+        <div class="box-g"></div>
+        <div class="box-h"></div>
+
+    </div>
+     <!-- Back to Top Button -->
+     <a href="#" class="back-to-top" title="Back to Top">&#8679;</a>
+
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="copyright">
+            <p>Copyright​ © 2024 Best Lanka Engineering (PVT) LTD. All Right Reserved. Solution by <a href="https://swsolution.netlify.app/">Softwave Solution</a></p>
+
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentLocation = location.href;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const navLinksHam = document.querySelectorAll('.menu-links a');
+
+            navLinks.forEach(link => {
+                if (link.href === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+
+            navLinksHam.forEach(link => {
+                if (link.href === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Toggle menu function for the hamburger menu
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz54cXQSBhM0UuG8sm6mdLht3KhrQ-XWaAViYTNJZYD6XkCdrKOlnOjLLKirFQzGEUGkw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+                  // Show the Back to Top button when scrolling down
+                  window.onscroll = function() {
+            var backToTopButton = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top when the button is clicked
+        document.querySelector('.back-to-top').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+      </script>
+
+</body>
+</html>

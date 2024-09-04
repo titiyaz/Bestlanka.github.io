@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+    
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <nav id="desktop-nav">
+            <div class="logo-image">
+                <img src="../navbar/Images/new_white_gb.png" alt="Best Lanka Engineering">
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="../Home/homepage.html" id="home-link">Home</a></li>
+                    <li><a href="../project/project.html" id="projects-link">Projects</a></li>
+                    <li><a href="../aboutus/aboutus.html" id="about-link">About Us</a></li>
+                    <li><a href="../Contact  us/Contact.html" id="contact-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><img src="../navbar/Images/new_white_gb.png" class="Ham-logo"></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="../Home/homepage.html" id="home-link-ham" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="../project/project.html" id="projects-link-ham" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../aboutus/aboutus.html" id="about-link-ham" onclick="toggleMenu()">About Us</a></li>
+                    <li><a href="../Contact  us/Contact.html" id="contact-link-ham" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <div class="background-image">
+            
+        </div>
+        
+        <header>
+            <h1>Our Construction Projects</h1>
+        </header>
+    
+        <section class="main-projects">
+            
+            <div class="grid-container">
+                <div class="grid-item project1">
+                    <a href="./CCF_000462.pdf">
+                    <img src="images/main/p13.jpg" alt=""></a>
+
+                    <p>Off-site piling works at Laugfs LPG Storage and Terminal
+                        Facility at Hambantota.</p>
+                </div>
+                <div class="grid-item project2">
+                    <a href="./BL - Completion Certificate.PDF">
+                    <img src="images/main/p21.jpg" alt=""></a>
+                    <p>Katana water supply project.</p>
+                </div>
+                <div class="grid-item project3">
+                    <a href="./Best Lanka.PDF">
+                    <img src="images/main/p32.jpg" alt=""></a>
+                    <p>Pre-Cast Pile Casting, Supply and Driving Project.</p>
+                </div>
+               
+            </div>
+        </section>
+        <h2 class="other-heading">Other Projects</h2>
+    
+        <section class="other-projects">
+            <div class="grid-container2">
+                <div class="grid-item">
+                    <img src="./Images/sspiling/project1/ssp1.jpg" alt="">
+                    <p>Pre-boring work & steel sheet pile work
+                        for the 45 storied residential building project at colombo 03.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./Images/sspiling/project5/ssp2.jpg" alt="">
+                    <p>Steel Sheet Pile work for Pannala Bridge for Rural Bridge Project at Foresight Engineering (Pvt) Ltd</p>
+                </div><div class="grid-item">
+                    <img src="./Images/sspiling/project6/ssp2.jpg" alt="">
+                    <p>Steel sheet pile work for Baili Investment Lanka (Pvt) Ltd at Rajagiriya</p>
+                </div><div class="grid-item">
+                    <img src="./Images/ppiling/project1/pcp1.jpg" alt="">
+                    <p>Pre-cast pile work & Construction of pile caps for proposed Water Supply Project at Katana</p>
+                </div><div class="grid-item">
+                    <img src="./Images/ppiling/project2/pcp1.jpg" alt="">
+                    <p>Spun pile work for LPG Storage facility at Hambantota (Laugfs Terminals)</p>
+                </div><div class="grid-item">
+                    <img src="./Images/ppiling/project3/pcp2.jpg" alt="">
+                    <p>Pre Caste piling work for 220kv transmission line at Meegoda & Hanwella (main contractor Lanka Tranformers Ltd)</p>
+                </div><div class="grid-item">
+                    <img src="./Images/ppiling/project5/pcp1.jpg" alt="">
+                    <p>Pre-cast piling work for Miner staff Building project at Sugathadasa Stadium</p>
+                </div><div class="grid-item">
+                    <img src="./Images/bpiling/project1/bp1.jpg" alt="">
+                    <p>Construction of dia.800mm Bored piles for proposed bridge project at Welipenna for Foresight Engineering (Pvt) Ltd</p>
+                </div><div class="grid-item">
+                    <img src="./Images/bpiling/project4/bp2.jpg" alt="">
+                    <p>Dia.600mm Bored pile work for Mahiyanganaya Water Supply Project</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top" title="Back to Top">&#8679;</a>
+
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="copyright">
+            <p>Copyright​ © 2024 Best Lanka Engineering (PVT) LTD. All Right Reserved. Solution by <a href="https://swsolution.netlify.app/">Softwave Solution</a></p>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentLocation = location.href;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const navLinksHam = document.querySelectorAll('.menu-links a');
+
+            navLinks.forEach(link => {
+                if (link.href === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+
+            navLinksHam.forEach(link => {
+                if (link.href === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Toggle menu function for the hamburger menu
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+
+
+
+                // Show the Back to Top button when scrolling down
+        window.onscroll = function() {
+            var backToTopButton = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top when the button is clicked
+        document.querySelector('.back-to-top').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navi Bar</title>
+    <link rel="stylesheet" href="Nav-bar.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo-image">
+            <img src="Images/new_white_gb.png" alt="Best Lanka Engineering">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#experience">Project</a></li>
+                <li><a href="#projects">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo"><img src="Images/new_white_gb.png" class="Ham-logo"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">About Us</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+
+        /* Hamburger Menu JS */
+
+    function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+    }
+
+    </script>
+    <script>
+        // Get the current page's URL
+        const currentLocation = location.href;
+
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        // Loop through the links
+        navLinks.forEach(link => {
+            if (link.href === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Toggle menu function for the hamburger menu
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+
+    </script>
+
+</body>
+</html>

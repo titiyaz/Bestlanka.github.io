@@ -1,0 +1,253 @@
+/* Navigation bar */
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+        z-index: 1000;
+    }
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile, 
+    .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section,
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-container {
+        margin-top: 0;
+    }
+    .Ham-logo {
+        height: 7%;
+        width: 100px; 
+    }
+    .menu-links {
+        z-index: 1002;
+    } 
+
+}
+
+/* Container (Dekstop and laptops)*/ 
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 300px);
+    }
+
+    .box-c {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        font-size: 40px;
+    }
+
+    .box-e {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2;
+    }
+
+    .box-a {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+
+    .logo-main-image {
+        height: 350px;
+        width: 350px;
+        display: block;
+        margin-top: -40px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .specilities {
+        font-size: 17px;
+    }
+
+    .img-slider {
+        padding: 20px;
+        top: 15%;
+        left: 25px;
+    }
+}
+
+/* Tablets */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 300px);
+    }
+
+    .box-c {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        font-size: 40px;
+    }
+
+    .box-d {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
+        font-size: 15px;
+    }
+
+    .box-e {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2;
+    }
+
+    .box-a {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+
+    .home_about {
+        font-size: 2.75rem;
+    }
+
+    .logo-main-image {
+        height: 350px;
+        width: 350px;
+        display: block;
+        margin-top: -40px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .specilities {
+        font-size: 17px;
+    }
+
+    
+
+}
+
+/* Mobile Devices */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 300px);
+    }
+
+    .box-c {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        font-size: 40px;
+    }
+
+    
+    .box-e {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2;
+    }
+
+    .box-a {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+
+    .home_about {
+        font-size: 2rem;
+    }
+
+    .logo-main-image {
+        height: 350px;
+        width: 350px;
+        display: block;
+        margin-top: -40px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .specilities {
+        font-size: 17px;
+    }
+    
+}
+
+/* iPads Air  and iPad Pro */
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 300px);
+    }
+
+    .box-c {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        font-size: 40px;
+    }
+
+    .box-e {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2;
+    }
+
+    .box-a {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+
+    .home_about {
+        font-size: 4rem;
+    }
+
+    .logo-main-image {
+        height: 350px;
+        width: 350px;
+        display: block;
+        margin-top: -40px;
+    }
+
+    .heading {
+        font-size: 65px;
+    }
+
+    .specilities {
+        font-size: 35px;
+    }
+    .img_collage_mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .img_collage {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    .img_collage_mobile {
+        display: none;
+    }
+}
